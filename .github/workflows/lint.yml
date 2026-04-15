@@ -1,0 +1,14 @@
+name: Setup lint fo rthe project
+
+on:
+  push:
+    branches: [main]
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm run lint
+
+
+   
+
