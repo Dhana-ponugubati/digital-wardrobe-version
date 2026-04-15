@@ -1,0 +1,7 @@
+@DigitalWardrobe.Api_HostAddress = http://localhost:5008
+
+
+GET {{DigitalWardrobe.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
