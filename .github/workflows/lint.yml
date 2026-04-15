@@ -1,14 +1,22 @@
-name: Setup lint fo rthe project
+name: Lint
 
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
+
 jobs:
-  example-job:
+  lint:
     runs-on: ubuntu-latest
     steps:
-      - run: npm run lint
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run lint
+        run: npm run lint
 
 
-   
+
 
